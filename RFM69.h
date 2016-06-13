@@ -48,6 +48,9 @@
 #elif defined(__arm__)//Use pin 10 or any pin you want
   #define RF69_IRQ_PIN          10
   #define RF69_IRQ_NUM          10
+#elif defined(ESP8266)
+  #define RF69_IRQ_PIN          4
+  #define RF69_IRQ_NUM          4
 #else 
   #define RF69_IRQ_PIN          2
   #define RF69_IRQ_NUM          0  
